@@ -1,0 +1,89 @@
+@import url('./navigation.css');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Heebo:800|Josefin+Sans:300|Open+Sans:800|Pacifico|Roboto:900|Work+Sans:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Oswald|Poiret+One|Quicksand|Roboto|Signika&display=swap');
+#heading{
+    margin-top: 8rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
+    color: rgb(131, 48, 88);
+}
+#container{
+    margin-top: 3rem;
+    background-color: #fff;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 180px;
+    height: 150px;
+    border-radius: 2px;
+    margin: 3rem;
+    border-radius: 0.22rem;
+}
+/*========================================
+          SUBSCRIBE
+==========================================*/
+#subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 169, 156);
+    margin-top: 4rem;
+}
+.heading h1{
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: rgb(131,49, 88);
+}
+.subscribeButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.subscribeButton form > button{
+    background: rgb(131,49, 88);
+    color: #EEE;
+    transition-duration: 0.5s;
+    transition-property: background-color,color,border;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+.subscribeButton form >button:hover{
+    background-color: #fff;
+    color: rgb(131,49, 88);
+    border: 3px solid rgb(131,49, 88);
+}
+
+.subscribeButton form > input , button{
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    outline: none;
+    color: rgb(131,49, 88);
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+    border-radius: 1rem;
+    
+
+    
+}
+footer{
+    background-color: rgb(255, 169, 156);
+}
+footer h1{
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    color: rgb(131,49, 88);
+}

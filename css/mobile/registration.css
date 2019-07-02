@@ -1,0 +1,123 @@
+@import url('./navigation.css');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Heebo:800|Josefin+Sans:300|Open+Sans:800|Pacifico|Roboto:900|Work+Sans:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Oswald|Poiret+One|Quicksand|Roboto|Signika&display=swap');
+#registration{
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7rem;
+    margin: 3rem 0;
+}
+.details > h1{
+    color: rgb(36, 0, 61);
+    font-size: 4rem;
+}
+.details > p{
+    color: rgb(131, 49, 88);
+}
+
+.registrationForm > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.registrationForm > form > label{
+    margin-left: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+}
+.registrationForm > form > input{
+    margin: 2rem;
+    width: 10rem;
+    height: 2rem;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+
+}
+.registrationForm > form > button{
+    background: rgb(22, 83, 193);
+    color: #EEE;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+}
+/*========================================
+          SUBSCRIBE
+==========================================*/
+#subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 169, 156);
+    margin-top: 4rem;
+}
+.heading h1{
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: rgb(131,49, 88);
+}
+.subscribeButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.subscribeButton form > button{
+    background: rgb(131,49, 88);
+    color: #EEE;
+    transition-duration: 0.5s;
+    transition-property: background-color,color,border;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+.subscribeButton form > button:hover{
+    background-color: #fff;
+    color: rgb(131,49, 88);
+    border: 3px solid rgb(131,49, 88);
+}
+
+.subscribeButton form > input , button{
+    width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+    outline: none;
+    color: rgb(131,49, 88);
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+    border-radius: 1rem;
+    
+
+    
+}
+footer{
+    background-color: rgb(255, 169, 156);
+}
+footer > h1{
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    color: rgb(131,49, 88);
+}

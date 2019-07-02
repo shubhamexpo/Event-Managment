@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Open+Sans:800|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Oswald|Poiret+One|Quicksand|Roboto|Signika&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*-------------------------------NAVBAR START------------------------------*/
+a{
+    text-decoration: none;
+}
+
+
+#navBar{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    top: 0;
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+    height: 80px;
+    width: 100%;
+    padding: 0;   
+    z-index: 2;
+}
+#navBar .logoBg{
+    display: flex;
+    height: 93px;
+    justify-content: center;
+    align-items: center;
+
+}
+#navBar .logoBg h2{
+    font-family: 'Cookie', cursive;
+    font-size: 2rem;
+    font-stretch: 100%;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #1E2D3B;
+    margin: 4rem;
+}
+#navBar .navigation{
+    display: none;
+}
+.menu-wrap{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    
+}
+.menu-wrap .toggler{
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    z-index: 2;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+.menu-wrap .hamburger{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*line*/
+
+.menu-wrap .hamburger > div{
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    transition: all 0.4s ease;
+    
+}
+/*top-bottom*/
+.menu-wrap .hamburger > div::before, .menu-wrap .hamburger > div::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+    
+}
+.menu-wrap .hamburger > div::after{
+    top: 10px;   
+}
+/*animation*/
+.menu-wrap .toggler:checked + .hamburger > div{
+    transform: rotate(135deg);
+}
+.menu-wrap .toggler:checked + .hamburger > div:before , .menu-wrap .toggler:checked + .hamburger > div:after{
+    top: 0;
+    transform: rotate(90deg);
+}
+/* rotate o hover when checked */
+.menu-wrap .toggler:checked:hover +.hamburger > div{
+    transform: rotate(225deg);
+}
+.menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-wrap .menu > div{
+    background: rgb(249, 229, 219);
+    border-radius: 50%;
+    width: 300vw;
+    height: 300vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+.menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.menu-wrap .menu > div > div > ul > li{
+    list-style: none;
+    color: #3B3A3A;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: 'Roboto',sans-serif;
+}
+.menu-wrap .menu > div > div > ul > li > a{
+    color: #3B3A3A;
+}
+/*show menu*/
+.menu-wrap .toggler:checked ~ .menu{
+    visibility: visible;
+}
+.menu-wrap .toggler:checked ~ .menu > div{
+    transform: scale(1);
+    transition-duration:  0.75s;
+}
+.menu-wrap .toggler:checked ~ .menu > div > div{
+    opacity: 1;
+    transform: opacity 0.4s ease 0.4s;
+}

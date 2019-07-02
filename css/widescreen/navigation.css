@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Open+Sans:800|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Oswald|Poiret+One|Quicksand|Roboto|Signika&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+
+}
+#navBar .menu-wrap{
+    display: none;
+}
+
+#navBar{
+    display: flex;
+    position: fixed;
+    top:0;
+    background: #fff;
+    justify-content: space-around;
+    z-index: 2;
+    padding: 1rem;
+    height: 80px;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+}
+#navBar .logoBg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    
+    width: 336px;
+}
+#navBar .logoBg .logo{
+    padding: 15px 44px;
+    font-family: 'Cookie', cursive;
+    font-size: 2rem;
+    font-stretch: 10%;
+    letter-spacing: 2px;
+    line-height: 23px;
+}
+
+#navBar .navigation ul{
+    display: flex;
+    list-style: none;   
+}
+
+#navBar .navigation ul li a{
+    color: #000;
+    padding: 1.5rem;
+    font-family: 'Roboto',sans-serif;
+    
+}
+
+#navBar .navigation ul li a:hover{
+    color: rgb(255, 0, 81);
+}

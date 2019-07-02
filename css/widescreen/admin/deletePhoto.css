@@ -1,0 +1,214 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+#container .sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 300px;
+    background: rgb(31,28,45);
+}
+.sideBar .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 5rem;
+    background: rgb(28,26,40);
+}
+.sideBar .title h1{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+.sideBar .dashBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background: rgb(28,26,40);
+    margin: 1rem 0rem;
+}
+.sideBar .dashBoard h1{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgb(153,151,174);
+}
+.sideBar .dashBoard a{
+    color: rgb(153,151,174);
+    text-decoration: none;
+}
+.sideBar .addProject,.editProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 5rem;
+}
+.sideBar .addProject:hover,.editProject:hover{
+    background: rgb(28,26,40);
+}
+.sideBar  .addProject h1,.editProject h1{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgb(153,151,174);
+}
+.sideBar  .addProject a,.editProject a{
+    color: rgb(153,151,174);
+    text-decoration: none;
+}
+.sideBar .dashBoard{
+    background: rgb(28,26,40);
+}
+.sideBar .logout button{
+    display: block;
+    width: 300px;
+    height: 5rem;
+    border-radius: 2px;
+    margin-right:  1rem;
+    cursor: pointer;
+    outline: none; 
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgb(153,151,174);
+    background: rgb(31,28,45);
+    
+}
+
+/*------------------------------side Bar Ends---------------------------*/
+
+#container .operation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    
+    align-items: center;
+}
+#container .operation .welcome{
+    padding: 1rem;
+}
+#container .operation .welcome h1{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: rgb(105,100,255);   
+}
+#container .operation .projectDetails{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+}
+#container .operation .projectDetails .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    background: rgb(241,242,247);
+}
+.projectDetails .item .edit{
+    width: 85px;
+    height: 33px;
+    cursor: pointer;
+    background: greenyellow;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 19px;
+}
+.projectDetails .item .delete{
+    width: 85px;
+    height: 33px;
+    cursor: pointer;
+    background: red;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 19px;
+    
+}
+.projectDetails .item .delete h1, .edit h1,.serialNo{
+    font-family: 'Roboto', sans-serif;;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.projectDetails .item .edit a,.delete a{
+    text-decoration: none;color: #fff !important;
+    
+}
+.projectDetails .item .projectName h1{
+    font-family: 'Roboto', sans-serif;;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+#container .operation .projectDetails1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+}
+#container .operation .projectDetails1 .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60rem;
+    height: 10rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    background: rgb(241,242,247);
+}
+.photo img{
+    width: 5rem;
+    height: 8rem;
+}
+.projectDetails1 .item .delete{
+    width: 85px;
+    height: 33px;
+    cursor: pointer;
+    background: red;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 19px;
+    
+}
+.projectDetails1 .item .delete h1, .edit h1,.serialNo{
+    font-family: 'Roboto', sans-serif;;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.projectDetails1 .item .edit a,.delete a{
+    text-decoration: none;color: #fff !important;
+    
+}
+.projectDetails1 .item .projectName h1{
+    font-family: 'Roboto', sans-serif;;
+    font-size: 16px;
+    font-weight: 100;
+}
