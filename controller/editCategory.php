@@ -16,7 +16,8 @@ if(isset($_POST['submit'])){
         $destinationFile = '../../resource/eventCategoryImages/'.$fileName;
         move_uploaded_file($filetmp,$destinationFile);
         $update="UPDATE category SET category_name='$category_name',category_photo='$destinationFile' WHERE category_id=$category_id";
-        $query = mysqli_query($connection,$update);     
+        $query = mysqli_query($connection,$update);  
+        header('location:../admin/editCategory.php');   
     }
 }
 ?>

@@ -13,6 +13,7 @@ if(isset($_POST['submit'])){
     $registred = "INSERT INTO registredEvent(event_id,event_name,category_name,full_name,email,phone_number,organization,event_cost,profession)
     VALUES('$event_id','$event_name','$category_name','$full_name','$email','$phone_number','$organization','$event_cost','$profession')";
     $query = mysqli_query($connection,$registred);     
+    header('location:../admin/purchasedEvent.php');
 }
 
 ?>
