@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
         $addCategory = "INSERT INTO category(category_name,category_photo)
         VALUES('$category_name','$destinationFile')";
         $query = mysqli_query($connection,$addCategory);
-        header('location:../view/admin/addCategory.php');
+        header('location:../admin/addCategory.php');
     }
 }
 ?>

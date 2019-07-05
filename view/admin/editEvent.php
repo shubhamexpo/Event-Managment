@@ -30,7 +30,7 @@ include("../../controller/editEvent.php");
             </div>
         </div>
         <div class="operation">
-                <div class="welcome"><h1>Welcome to Sabz Infra Solutions</h1></div>
+                <div class="welcome"><h1>Wesas Event</h1></div>
                 <div class="projects">
                 <form action="" method="POST" enctype="multipart/form-data">
                     <select name="category_name">

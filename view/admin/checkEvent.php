@@ -14,7 +14,7 @@ include("../../model/pathToDataCenter.php");
     <section id="container">
         <div class="sideBar">
         <div class="sideBar">
-            <div class="title"><h1>Star International</h1></div>
+            <div class="title"><h1>Wesas Event</h1></div>
             <div class="dashBoard"style="cursor:pointer;"onclick="document.location='../../view/admin/controlCenter.php'"><h1><a href="../../view/admin/controlCenter.php">Dashboard</a></h1></div>
             <div class="addProject"style="cursor:pointer;"onclick="document.location='../../view/admin/addEvent.php'"><h1><a href="../../view/admin/addEvent.php">Add Event</a></h1></div>
             <div class="editProject"style="cursor:pointer;"onclick="document.location='../../view/admin/operateEvent.php'"><h1><a href="../../view/admin/operateEvent.php">Edit/Delete Event</a></h1></div>

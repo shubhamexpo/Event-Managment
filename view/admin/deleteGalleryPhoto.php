@@ -37,7 +37,7 @@ include("../../model/pathToDataCenter.php");
                     </div>
                 </div>
                 <?php
-                $q = "select * from gallery";
+                $q = "select photo_id,photo from gallery";
                 $query = mysqli_query($connection,$q);
                 while($res = mysqli_fetch_array($query))
                 {
