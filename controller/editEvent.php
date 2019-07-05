@@ -21,6 +21,7 @@ if(isset($_POST['submit'])){
         move_uploaded_file($filetmp,$destinationFile);
         $update="UPDATE eventss SET event_name='$event_name' ,event_date='$event_date',event_cost='$event_cost' ,event_description='$event_description', event_photo='$destinationFile',category_name='$category_name' WHERE event_id=$event_id";
         $query = mysqli_query($connection,$update);     
+        header('location:../admin/editEvent.php');
     }
 }
 ?>
