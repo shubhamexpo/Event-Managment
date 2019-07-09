@@ -107,4 +107,3 @@ include('./components/footer.php');
 <script src="./js/slider.js"></script>
 </body>
 </html>
-

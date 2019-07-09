@@ -15,8 +15,7 @@ if(isset($_POST['submit'])){
         move_uploaded_file($filetmp,$destinationFile);
         $addGallery = "INSERT INTO gallery(photo)
         VALUES('$destinationFile')";
-        $query = mysqli_query($connection,$addGallery);   
-        header('location:../admin/addGalleryPhoto.php');  
+        $query = mysqli_query($connection,$addGallery);     
     }
 }
 

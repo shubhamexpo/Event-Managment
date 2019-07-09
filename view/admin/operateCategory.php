@@ -7,7 +7,8 @@ include("../../model/pathToDataCenter.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" media="screen and (min-width:1200px)" href="../../css/widescreen/admin/operate.css">
+    <link rel="stylesheet" media="screen and (min-width:300px) and (max-width:900px)" href="../../css/mobile/admin/operate.css">
+    <link rel="stylesheet" media="screen and (min-width:901px)" href="../../css/widescreen/admin/operate.css">
     <title>Edit Projects</title>
 </head>
 <body>

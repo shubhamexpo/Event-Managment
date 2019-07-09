@@ -23,9 +23,7 @@ if(isset($_POST['submit'])){
         $addEvent = "INSERT INTO eventss(event_name,event_date,event_cost,latitude,longitude,event_description,event_photo,category_name)
         VALUES('$event_name','$event_date','$event_cost','$latitude','$longitude','$event_description','$destinationFile','$category_name')";
         $query = mysqli_query($connection,$addEvent);     
-        header('location:../admin/addEvent.php');
     }
 }
 
 ?>
-

@@ -1,0 +1,129 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#container .sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background: rgb(31,28,45);
+}
+.sideBar .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: rgb(28,26,40);
+}
+.sideBar .title h1{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+.sideBar .dashBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: rgb(28,26,40);
+    margin: 1rem 0rem;
+}
+.sideBar .dashBoard h1{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgb(153,151,174);
+}
+.sideBar .dashBoard a{
+    color: rgb(153,151,174);
+    text-decoration: none;
+}
+.sideBar .addProject,.editProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+}
+.sideBar .addProject:hover,.editProject:hover{
+    background: rgb(28,26,40);
+}
+.sideBar  .addProject h1,.editProject h1{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgb(153,151,174);
+}
+.sideBar  .addProject a,.editProject a{
+    color: rgb(153,151,174);
+    text-decoration: none;
+}
+.sideBar .dashBoard{
+    background: rgb(28,26,40);
+}
+.sideBar .logout button{
+    display: block;
+    width: 300px;
+    height: 5rem;
+    border-radius: 2px;
+    margin-right:  1rem;
+    cursor: pointer;
+    outline: none; 
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgb(153,151,174);
+    background: rgb(31,28,45);
+    
+}
+
+/*------------------------------side Bar Ends---------------------------*/
+#container .operation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item > input , button{
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid black;
+}
+textarea{
+    border: 1px solid black;
+}
+button{
+    background: black;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+}

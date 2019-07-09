@@ -1,0 +1,150 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#container .sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 115vh;
+    width: 100%;
+    background: rgb(31,28,45);
+}
+.sideBar .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: rgb(28,26,40);
+}
+.sideBar .title h1{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+.sideBar .dashBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: rgb(28,26,40);
+    margin: 1rem 0rem;
+}
+.sideBar .dashBoard h1{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgb(153,151,174);
+}
+.sideBar .dashBoard a{
+    color: rgb(153,151,174);
+    text-decoration: none;
+}
+.sideBar .addProject,.editProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+}
+.sideBar .addProject:hover,.editProject:hover{
+    background: rgb(28,26,40);
+}
+.sideBar  .addProject h1,.editProject h1{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgb(153,151,174);
+}
+.sideBar  .addProject a,.editProject a{
+    color: rgb(153,151,174);
+    text-decoration: none;
+}
+.sideBar .dashBoard{
+    background: rgb(28,26,40);
+}
+.sideBar .logout button{
+    display: block;
+    width: 300px;
+    height: 5rem;
+    border-radius: 2px;
+    margin-right:  1rem;
+    cursor: pointer;
+    outline: none; 
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: rgb(153,151,174);
+    background: rgb(31,28,45);
+    
+}
+
+/*------------------------------side Bar Ends---------------------------*/
+#container .operation{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+}
+#container .operation .welcome{
+    padding: 1rem;
+}
+#container .operation .welcome h1{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: rgb(105,100,255);   
+}
+#container .operation .projects{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: rgb(241,242,247);
+}
+#container .operation .projects form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    height: 100vh;
+}
+#container .operation .projects form input,select{
+    outline: none;
+    width: 450px;
+    height: 40px;
+    border-radius: 2px;
+    display: flex; 
+    font-size: 16px;
+}
+#container .operation .projects form input,label,select{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#container .operation .projects form button{
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}

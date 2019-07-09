@@ -7,12 +7,12 @@ include("../../model/pathToDataCenter.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" media="screen and (min-width:1200px)" href="../../css/widescreen/admin/checkEvent.css">
+    <link rel="stylesheet" media="screen and (min-width:300px) and (max-width:900px)" href="../../css/mobile/admin/checkEvent.css">
+    <link rel="stylesheet" media="screen and (min-width:901px)" href="../../css/widescreen/admin/addEvent.css">
     <title>Admin</title>
 </head>
 <body>
     <section id="container">
-        <div class="sideBar">
         <div class="sideBar">
             <div class="title"><h1>Wesas Event</h1></div>
             <div class="dashBoard"style="cursor:pointer;"onclick="document.location='../../view/admin/controlCenter.php'"><h1><a href="../../view/admin/controlCenter.php">Dashboard</a></h1></div>
@@ -24,7 +24,6 @@ include("../../model/pathToDataCenter.php");
             <div class="editProject"style="cursor:pointer;"onclick="document.location='../../view/admin/purchasedEvent.php'"><h1><a href="../../view/admin/purchasedEvent.php">Purchased Event</a></h1></div>
             <div class="editProject"style="cursor:pointer;"onclick="document.location='../../view/admin/addGalleryPhoto.php'"><h1><a href="../../view/admin/addGalleryPhoto.php">Add Gallery Photo</a></h1></div>
             <div class="editProject"style="cursor:pointer;"onclick="document.location='../../view/admin/deleteGalleryPhoto.php'"><h1><a href="../../view/admin/deleteGalleryPhoto.php">Delete Gallery Photo</a></h1></div>
-        </div>
         </div>
         <div class="operation">
                 <div class="welcome"><h1>Welcome to Sabz Infra Solutions</h1></div>
